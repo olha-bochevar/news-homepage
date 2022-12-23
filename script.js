@@ -1,6 +1,6 @@
 // DOM
 const body = document.querySelector('body');
-const wrapper = document.querySelector('.wrapper');
+const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 const btnMenuOpen = document.querySelector('.menu__image');
 const btnMenuClose = document.querySelector('.menu__close');
@@ -11,6 +11,7 @@ btnMenuOpen.addEventListener('click', () => {
     nav.style.width = '70%';
     btnMenuClose.style.display = 'block';
     body.style.backgroundColor = 'var(--grayish-blue)';
+    header.style.backgroundColor = 'var(--grayish-blue)';
 });
 btnMenuClose.addEventListener('click', () => {
     closeMenu();
@@ -24,4 +25,5 @@ function closeMenu() {
     nav.style.width = '0%';
     btnMenuClose.style.display = 'none';
     body.style.backgroundColor = '';
+    header.style.backgroundColor = '';
 }
