@@ -17,48 +17,35 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <body>
-    
-      <header>
-        <!-- main header container -->
-        <div class="header__container">
-          <div class="header__logo">
-            <a href="."><img src="/assets/images/logo.svg" alt="logo" /></a>
-          </div>
-          <div class="header__menu menu">
-            <div class="menu__image">
-              <img src="/assets/images/icon-menu.svg" alt="menu" />
-            </div>
+    <header>
+      <!-- main header container -->
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="."><img src="/assets/images/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="header__menu menu">
+          <div class="menu__image">
+            <img src="/assets/images/icon-menu.svg" alt="menu" />
           </div>
         </div>
-        <nav>
-          <div class="menu__close">
-            <img src="/assets/images/icon-menu-close.svg" alt="close menu" />
-          </div>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">New</a></li>
-            <li><a href="#popular">Popular</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Categories</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="wrapper">
+      </div>
+      <nav>
+        <div class="menu__close">
+          <img src="/assets/images/icon-menu-close.svg" alt="close menu" />
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">New</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
       <main class="page">
         <section class="page__home home" id="home">
           <div class="home__main-image">
@@ -103,44 +90,51 @@
           </article>
         </section>
         <section class="page__popular popular" id="popular">
-          <article class="popular">
+          <article class="popular__article">
             <div class="popular__image _ibg">
               <img src="/assets/images/image-retro-pcs.jpg" alt="retro pcs" />
             </div>
-            <p class="popular__top">01</p>
-            <h3>Reviving Retro PCs</h3>
-            <p>What happens when old PCs are given modern upgrades?</p>
+            <div class="popular__content">
+              <p class="popular__top-title">01</p>
+              <h3>Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
           </article>
-          <article class="popular">
+          <article class="popular__article">
             <div class="popular__image _ibg">
               <img
                 src="/assets/images/image-top-laptops.jpg"
                 alt="top laptops"
               />
             </div>
-            <p class="popular__top">02</p>
-            <h3>Top 10 Laptops of 2022</h3>
-            <p>Our best picks for various needs and budgets.</p>
+            <div class="popular__content">
+              <p class="popular__top-title">02</p>
+              <h3>Top 10 Laptops of 2022</h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
           </article>
-          <article class="popular">
+          <article class="popular__article">
             <div class="popular__image _ibg">
               <img
                 src="/assets/images/image-gaming-growth.jpg"
                 alt="gaming growth"
               />
             </div>
-            <p class="popular__top">03</p>
-            <h3>The Growth of Gaming</h3>
-            <p>How the pandemic has sparked fresh opportunities.</p>
+            <div class="popular__content">
+              <p class="popular__top-title">03</p>
+              <h3>The Growth of Gaming</h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
           </article>
         </section>
       </main>
-
-      <!--  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
     </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/olha-bochevar">Olha Bochevar</a>.
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
