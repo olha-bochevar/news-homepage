@@ -34,32 +34,33 @@
   <body>
     <div class="wrapper">
       <header>
+        <!-- main header container -->
         <div class="header__container">
           <div class="header__logo">
             <a href="."><img src="/assets/images/logo.svg" alt="logo" /></a>
           </div>
           <div class="header__menu menu">
-            <div class="menu-image">
+            <div class="menu__image">
               <img src="/assets/images/icon-menu.svg" alt="menu" />
             </div>
-            <div class="menu-mobile">
-              <div class="menu__close"><img src="" alt="" /></div>
-            </div>
-            <nav>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Trending</a></li>
-                <li><a href="#">Categories</a></li>
-              </ul>
-            </nav>
           </div>
         </div>
+        <nav>
+          <div class="menu__close">
+            <img src="/assets/images/icon-menu-close.svg" alt="close menu" />
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">New</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
       </header>
       <main class="page">
         <section class="page__home home" id="home">
-          <div class="home__main-image">
+          <div class="home__main-image _ibg">
             <img
               class="home__main-image_mobile"
               src="/assets/images/image-web-3-mobile.jpg"
@@ -100,9 +101,9 @@
             </p>
           </article>
         </section>
-        <section class="page__popular popular">
+        <section class="page__popular popular" id="popular">
           <article class="popular">
-            <div class="popular__image">
+            <div class="popular__image _ibg">
               <img src="/assets/images/image-retro-pcs.jpg" alt="retro pcs" />
             </div>
             <p class="popular__top">01</p>
@@ -110,7 +111,7 @@
             <p>What happens when old PCs are given modern upgrades?</p>
           </article>
           <article class="popular">
-            <div class="popular__image">
+            <div class="popular__image _ibg">
               <img
                 src="/assets/images/image-top-laptops.jpg"
                 alt="top laptops"
@@ -121,7 +122,7 @@
             <p>Our best picks for various needs and budgets.</p>
           </article>
           <article class="popular">
-            <div class="popular__image">
+            <div class="popular__image _ibg">
               <img
                 src="/assets/images/image-gaming-growth.jpg"
                 alt="gaming growth"
