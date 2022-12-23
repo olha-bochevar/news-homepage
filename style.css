@@ -223,7 +223,7 @@ article:last-of-type {
 .page__popular {
 }
 .popular {
-    margin-bottom: 3em;
+    margin-bottom: 6em;
 }
 .popular__article { 
     display: grid;
@@ -233,8 +233,7 @@ article:last-of-type {
 .popular__article:not(:last-of-type) {
     margin-bottom: 2.5em;
 }
-.popular__image {
-}
+
 .popular__content {
     display: flex;
     flex-direction: column;
@@ -256,6 +255,23 @@ article:last-of-type {
     line-height: 1.8;
 }
 
+@media (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+    .popular {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5em;
+    }
+    .popular__article {
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+    .popular__content > *:not(:last-of-type) {
+        margin-bottom: 1em;
+    }
+}
 
 /*--------------- footer ------------------*/
 footer {
