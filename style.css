@@ -209,6 +209,13 @@ section.news > h2 {
     font-size: 1.3rem;
     margin-bottom: 1em;
 }
+.article h3 > a {
+    color: var(--off-white);
+}
+.article h3 > a:hover,
+.article h3 > a:active {
+    color: var(--soft-orange);
+}
 .article p {
    color: var(--grayish-blue); 
    line-height: 1.7;
@@ -250,6 +257,13 @@ article:last-of-type {
     font-weight: 800;
     font-size: 1.2rem;
 }
+.popular__content > h3 > a {
+    color: var(--very-dark-blue);
+}
+.popular__content > h3 > a:active,
+.popular__content > h3 > a:hover {
+    color: var(--soft-red);
+}
 .popular__content > p {
     color: var(--dark-grayish-blue); 
     line-height: 1.8;
@@ -282,6 +296,9 @@ article:last-of-type {
     .popular__content > h3 {
         font-size: 1.5rem;
     }
+}
+@media (min-width:992px) {
+    
 }
 
 /*--------------- footer ------------------*/
