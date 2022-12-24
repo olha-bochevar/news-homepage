@@ -139,7 +139,8 @@ nav > ul > li > a {
     color: #000;
     font-size: 1.2rem;
 }
-nav > ul > li > a:active {
+nav > ul > li > a:active,
+nav > ul > li > a:hover {
     color: var(--soft-red);
 }
 /* --------------------------- main --------------------------------*/
@@ -149,7 +150,7 @@ section.home {
 .home__main-image {
     margin-bottom: 2em;
 }
-.home__main-image > img {
+.home__main-image > img.home__main-image_mobile {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -298,7 +299,76 @@ article:last-of-type {
     }
 }
 @media (min-width:992px) {
-    
+    html {
+        font-size: 15px;
+    }
+    .wrapper, header {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header {
+        position: static;
+        padding: 3em 1em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__logo {
+        width: 5em;}
+
+    .menu__image {
+        display: none;
+    }
+    header > nav {
+        display: block;
+        position: static;
+        width: 100% !important;
+        height: auto;
+    }
+    nav > ul {
+        display: flex;
+        top: 0;
+        right: 0;
+        width: 100%;
+        justify-content: flex-end;
+        left: 0;
+    }
+    nav > ul > li {
+        margin-left: 3em;
+    }
+    main.page {
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 0.5fr 1fr; 
+        grid-template-areas: 
+        'home home news'
+        'home home news'
+        'popular popular popular';
+        gap: 2em
+    }
+    section.home {
+        grid-area: home; 
+    }
+    .home__main-image > img.home__main-image_mobile{
+        display:none;
+    }
+    .home__main-image > img.home__main-image_desktop {
+        display: inline;
+        width: 100%;
+    }
+    section.news{
+        grid-area: news;
+    }
+    section.popular {
+        grid-area: popular;
+    }
+    .popular {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .popular__article {
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
 }
 
 /*--------------- footer ------------------*/
