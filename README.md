@@ -25,7 +25,7 @@ Users should be able to:
 
 ![](./screenshot_desktop-version.jpg)
 ![](./screenshot_mobile-version.jpg)
-![](./screenshot_mobile-version__menu.jpg)
+![](./screenshot_mobile-version_menu.jpg)
 
 ### Links
 
