@@ -20,32 +20,33 @@
   </head>
 
   <body>
-    <header>
-      <!-- main header container -->
-      <div class="header__container">
-        <div class="header__logo">
-          <a href="."><img src="assets/images/logo.svg" alt="logo" /></a>
-        </div>
-        <div class="header__menu menu">
-          <div class="menu__image">
-            <img src="assets/images/icon-menu.svg" alt="menu" />
+    <div class="wrapper">
+      <header>
+        <!-- main header container -->
+        <div class="header__container">
+          <div class="header__logo">
+            <a href="."><img src="assets/images/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="header__menu menu">
+            <div class="menu__image">
+              <img src="assets/images/icon-menu.svg" alt="menu" />
+            </div>
           </div>
         </div>
-      </div>
-      <nav>
-        <div class="menu__close">
-          <img src="assets/images/icon-menu-close.svg" alt="close menu" />
-        </div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#news">New</a></li>
-          <li><a href="#popular">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="wrapper">
+        <nav>
+          <div class="menu__close">
+            <img src="assets/images/icon-menu-close.svg" alt="close menu" />
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">New</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+
       <main class="page">
         <section class="page__home home" id="home">
           <div class="home__main-image">
@@ -60,13 +61,15 @@
               alt="web3"
             />
           </div>
-          <h1>The Bright Future of Web 3.0?</h1>
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <a href="#" class="home__button">Read more</a>
+          <div class="home__main-content">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="#" class="home__button">Read more</a>
+          </div>
         </section>
         <section class="page__news news" id="news">
           <h2>New</h2>
@@ -91,7 +94,7 @@
         </section>
         <section class="page__popular popular" id="popular">
           <article class="popular__article">
-            <div class="popular__image _ibg">
+            <div class="popular__image">
               <img src="assets/images/image-retro-pcs.jpg" alt="retro pcs" />
             </div>
             <div class="popular__content">
@@ -101,7 +104,7 @@
             </div>
           </article>
           <article class="popular__article">
-            <div class="popular__image _ibg">
+            <div class="popular__image">
               <img
                 src="assets/images/image-top-laptops.jpg"
                 alt="top laptops"
@@ -114,7 +117,7 @@
             </div>
           </article>
           <article class="popular__article">
-            <div class="popular__image _ibg">
+            <div class="popular__image">
               <img
                 src="assets/images/image-gaming-growth.jpg"
                 alt="gaming growth"
@@ -129,12 +132,14 @@
         </section>
       </main>
     </div>
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/olha-bochevar">Olha Bochevar</a>.
-    </footer>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/olha-bochevar">Olha Bochevar</a>.
+      </footer>
+    
     <script src="script.js"></script>
   </body>
 </html>
